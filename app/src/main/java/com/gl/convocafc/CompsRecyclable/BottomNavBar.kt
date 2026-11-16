@@ -19,6 +19,7 @@ import androidx.navigation.NavController
 @Composable
 fun BottomNavBar(navController: NavController, content: @Composable () -> Unit = {}){
     Scaffold(
+        topBar = { HeaderBar(onConfigClick = { navController.navigate("ConfigPage")}) },
         bottomBar = {
             NavigationBar {
                 NavigationBarItem(

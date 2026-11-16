@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Money
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Remove
@@ -33,6 +34,7 @@ import com.gl.convocafc.CompsRecyclable.formatTimer
 import kotlinx.coroutines.delay
 @Composable
 fun JogosPage(navController: NavController){
+    //val maxScore by remember { $configMaxScore }
     var placarTeam1 by remember { mutableStateOf(0) }
     var placarTeam2 by remember { mutableStateOf(0) }
     var seconds by remember {mutableStateOf(600)}

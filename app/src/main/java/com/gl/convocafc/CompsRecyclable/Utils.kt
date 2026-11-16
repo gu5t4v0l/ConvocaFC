@@ -10,6 +10,6 @@ import com.gl.convocafc.JogosPage
 
 fun formatTimer(seconds: Int): String{
     val minutes = seconds / 60
-    val second = seconds % 60
-    return "$minutes:$second"
+    val seconds = (seconds % 60).toString().padStart(2, '0')
+    return "$minutes:$seconds"
 }

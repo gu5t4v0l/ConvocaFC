@@ -53,6 +53,10 @@ class MainActivity : ComponentActivity() {
                     composable("RankingPage") {
                         RankingPage(navController = navController)
                     }
+                    composable("ConfigPage"){
+                        ConfigPage(navController = navController)
+                    }
+
                 }
             }
         }
